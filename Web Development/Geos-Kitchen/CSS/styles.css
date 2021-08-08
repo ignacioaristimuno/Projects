@@ -1,0 +1,151 @@
+@import
+url('https://fonts.googleapis.com/css?family=Raleway>300,400,700,900');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 95%;
+    height: auto;
+}
+
+/* ------------ LOGO ----------*/
+
+.logo {
+    width: 15%;
+    margin-bottom: 20em;
+}
+
+
+@media (min-width: 60rem) {
+    .logo {
+        width: 220px;
+    }
+}
+
+@media (max-width: 20rem) {
+    .logo {
+        width: 100px;
+    }
+}
+
+/* ------------ TYPOGRAHPY ----------*/
+
+.title {
+    font-size: 2.2rem;
+    margin-bottom: 1.5em;
+}
+
+.title span {
+    font-weight: 300;
+    font: .85em;
+    display: block;
+}
+
+@media (min-width: 60rem) {
+    .title {
+        font-size: 3.7rem;
+    }
+}
+
+/* ------------ BUTTONS ----------*/
+
+.button {
+    display: inline-block;
+    font-size: 1.2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-width: 2px;
+    border-style: solid;
+    padding: .5em 1.75em;
+}
+
+.recipies-button {
+    color: blueviolet;
+}
+
+.recipies-button:hover, .recipies-button:focus {
+    background: orange;
+    color: palevioletred;
+    border-color: rebeccapurple;
+}
+
+@media (min-width: 60rem) {
+    .button {
+        font-size: 1.5rem;
+    }
+}
+
+/* ------------ HEADER ----------*/
+
+header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: 1em;
+    margin: 1em;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 1em;
+}
+
+nav a {
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    margin: 1em;
+    border-radius: 7px;
+    padding: .3em;
+    background: #4242425b;
+    color: whitesmoke;
+} 
+
+nav a:hover, nav a:focus {
+    color: rgb(85, 84, 84);
+    background:  #8cb4548c;
+}
+
+/* ------------ BANNER ----------*/
+
+.home-banner {
+    background-image: url(../img/banner-background.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10em 0;
+    text-align: center;
+}
+
+.banner-title {
+    margin-top: 7.5em;
+    margin-left: 2em;
+    font-size: 2em;
+    text-align: center;
+}
+
+@media (min-width: 60rem) {
+    .home-banner {
+        height: 100vh;
+        padding: 15vh;
+    }
+}
